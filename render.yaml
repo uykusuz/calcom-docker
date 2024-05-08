@@ -11,6 +11,10 @@ services:
         fromDatabase:
           name: cal-postgres
           property: connectionString
+      - key: DATABASE_DIRECT_URL
+        fromDatabase:
+          name: cal-postgres
+          property: connectionString
 
       - key: CALENDSO_ENCRYPTION_KEY
         value: secret
